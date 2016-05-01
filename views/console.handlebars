@@ -1,0 +1,53 @@
+<html>
+    <head>
+        {{>head}}
+    </head>
+    <body>
+        {{>includeMenu}}<br/><br/><br/><br/>
+        <div class="container">
+            <div class="row">
+                <div align="center">
+                    <h4>{{message}} </h4>
+                    <h2>JavaScript technology Stack</h2>
+                    <a href='/addForm'>
+                        <span class="glyphicon glyphicon-plus"></span>Add Technology
+                    </a>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Technology</th>
+                                    <th>Description</th>
+                                    <th>Edit</th>
+                                    <th>Delete</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {{#each recordArray}}
+                                    <tr>
+                                        <td>{{this.tech}}</td>
+                                        <td>{{this.description}}</td>
+                                        <td>
+                                            <a href='/edit?tech={{this.tech}}'>
+                                                <span class="glyphicon glyphicon-pencil"></span>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href='/delete?tech={{this.tech}}'>
+                                                <span class="glyphicon glyphicon-remove"></span>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                {{/each}}
+                            </tbody>
+                        </table>
+                    </div>
+                    <a href='/addForm'>
+                        <span class="glyphicon glyphicon-plus"></span>Add Technology
+                    </a>
+                </div>
+                </br>
+            </div>
+        </div>
+    </body>
+</html>

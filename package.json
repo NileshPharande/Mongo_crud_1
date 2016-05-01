@@ -1,0 +1,19 @@
+{
+  "name": "first_mongo",
+  "version": "0.0.0",
+  "description": "fisrt mongodb application using mongoose.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "nilesh",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "1.15.0",
+    "chalk": "1.1.3",
+    "express": "4.13.4",
+    "express-handlebars": "3.0.0",
+    "express-session": "1.13.0",
+    "mongoose": "4.4.13"
+  }
+}
